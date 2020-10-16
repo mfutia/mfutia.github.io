@@ -1,6 +1,6 @@
 # MATTHEW H. FUTIA
 
-![Backdrop](C:/Users/mttft/Desktop/Dissertation/LakeTrout.jpg)
+![](https://github.com/mfutia/mfutia.github.io/LakeTrout.jpg)
 ## Aquatic ecology for conservation and restoration
 
 You can use the [editor on GitHub](https://github.com/mfutia/mfutia.github.io/edit/main/index.md) to maintain and preview the content for your website in Markdown files.
