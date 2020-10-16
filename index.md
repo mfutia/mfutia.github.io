@@ -1,4 +1,4 @@
-# "MATTHEW H FUTIA"
+# MATTHEW H FUTIA
 
 ![](C:/Users/mttft/Desktop/Dissertation/LakeTrout.jpg)
 ## Aquatic ecology for conservation and restoration
