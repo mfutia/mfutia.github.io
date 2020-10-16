@@ -4,5 +4,31 @@ navbar:
   left:
     - text: "Home"
       href: index.html
+      icon: 
     - text: "About"
       href: about.html
+      icon:
+    - text: "CV"
+      href: cv.html
+      icon: 
+    - text: "Research"
+      href: research.html
+      icon:
+    - text: "Publications"
+      href: pubs.html
+      icon:
+    - text: "Grants"
+      href: grants.html
+      icon:
+  right:
+    - text: "Contact Me"
+      icon: fa-envelope-o
+      href: mailto:mfutia@uvm.edu
+    - text: "GitHub"
+      icon: fa-github
+      href: https://github.com/mfutia
+output:
+  html_document:
+    theme: cosmo
+      
+    
