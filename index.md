@@ -1,4 +1,4 @@
-# MATTHEW H. FUTIA
+# Matthew H. Futia
 
 ![](https://github.com/mfutia/mfutia.github.io/LakeTrout.jpg)
 ## Aquatic ecology for conservation and restoration
