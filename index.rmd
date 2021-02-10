@@ -1,5 +1,9 @@
 ---
 title: "MATTHEW H. FUTIA"
+output:
+  prettydoc::html_pretty:
+    theme: leonids
+    highlight: github
 ---
 
 
