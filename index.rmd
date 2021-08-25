@@ -1,13 +1,13 @@
 ---
 title: "MATTHEW H. FUTIA"
+author: "Aquatic ecology for conservation and restoration"
 output:
   prettydoc::html_pretty:
-    theme: leonids
+    theme: Cayman
     highlight: github
 ---
 
 
 ![](C:/Users/mttft/Desktop/Dissertation/LakeTrout.jpg)
 
-## Aquatic ecology for conservation and restoration
 
