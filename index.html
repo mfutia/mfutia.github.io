@@ -1,113 +1,124 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+  <!--
+  Identity by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html>
-	<head>
-		<title>Matthew H. Futia</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main4.css" />
-		<script type = "text/javascript">
-          function displayNextImage() {
-              x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("img").src = images[x];
-          }
+  <html>
+  <head>
+    <title>Matthew H. Futia</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main4.css" />
+    <script type = "text/javascript">
+    function displayNextImage() {
+      x = (x === images.length - 1) ? 0 : x + 1;
+      document.getElementById("img").src = images[x];
+    }
+    
+    function displayPreviousImage() {
+      x = (x <= 0) ? images.length - 1 : x - 1;
+      document.getElementById("img").src = images[x];
+    }
+    
+    function startTimer() {
+      setInterval(displayNextImage, 5000);
+    }
+    
+    var images = [], x = -1;
+    images[0] = "Gallery/laketrout.jpg";
+    images[1] = "Gallery/LTeggs.jpg";
+    images[2] = "Gallery/electrofishing.jpg";
+    images[3] = "Gallery/winter.jpg";
+    </script>
+    
+    <style>
+    .button {
+      color: white;
+      font-size: 20px;
+      padding: 0px 7px;
+      text-align: center;
+      transition-duration: 0.3s;
+      border-radius: 50%;
+      border-color: transparent;
+    }
+    
+    .button:hover{
+      background-color: #e5f5f9;
+      color: black;
+      border: #252525;
+    }
+    
+    p.normal {
+      font-weight: normal;
+    }
 
-          function displayPreviousImage() {
-              x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("img").src = images[x];
-          }
-          
-          function startTimer() {
-              setInterval(displayNextImage, 5000);
-          }
+    p.thick {
+      font-weight: bold;
+    }
 
-          var images = [], x = -1;
-          images[0] = "Gallery/laketrout.jpg";
-          images[1] = "Gallery/LTeggs.jpg";
-          images[2] = "Gallery/electrofishing.jpg";
-          images[3] = "Gallery/winter.jpg";
-      </script>
-      <style>
-        .button {
-          color: white;
-          font-size: 20px;
-          padding: 0px 7px;
-          text-align: center;
-          transition-duration: 0.3s;
-          border-radius: 50%;
-          border-color: transparent;
-        }
-        
-        .button:hover{
-          background-color: #e5f5f9;
-          color: black;
-          border: #252525;
-        }
-      </style>
-	</head>
-	
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="https://mfutia.github.io/">Home</a></h1>
-						<nav class="links">
-							<ul>
-								<li><a href="#">About</a></li>
-								<li><a href="CV.html">CV</a></li>
-								<li><a href="Research.html">Research</a></li>
-								<li><a href="Pubs.html">Publications</a></li>
-								<li><a href="Gallery.html">Gallery</a></li>
-							</ul>
-						</nav>
-					</header>
-
-
-				<!-- Main -->
-					<section id="main">
-					  <header>
-							<span class="avatar">
-							<body onload = "startTimer()">
-							  <img id="img" src="Gallery/winter.jpg" width="300" height="300">
-							  <button class="button button" onclick="displayPreviousImage()"><</button>
-							  <button class="button button" onclick="displayNextImage()">></button>
-							</body>
-							</span>
-							<h1>Matthew H. Futia</h1>
-							<h2>University of Vermont</h2>
-							<img id="img" src="Gallery/headshot.png" width="150" height="150">
-							<p>Aquatic ecology for conservation and restoration</p>
-						</header>
-
-						<!--
-						<h2>Extra Stuff!</h2>
-						<form method="post" action="#">
-							<div class="fields">
-								<div class="field">
-									<input type="text" name="name" id="name" placeholder="Name" />
-								</div>
-								<div class="field">
-									<input type="email" name="email" id="email" placeholder="Email" />
-								</div>
-								<div class="field">
-									<select name="department" id="department">
-										<option value="">Department</option>
-										<option value="sales">Sales</option>
-										<option value="tech">Tech Support</option>
-										<option value="null">/dev/null</option>
-									</select>
-								</div>
-								<div class="field">
-									<textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
-								</div>
-								<div class="field">
-									<input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
+    p.thicker {
+      font-weight: 900;
+    }
+    </style>
+  </head>
+  
+  <body class="is-preload">
+  <!-- Wrapper -->
+  <div id="wrapper">
+  
+  <!-- Header -->
+  <header id="header">
+    <h1><a href="https://mfutia.github.io/">Home</a></h1>
+    <nav class="links">
+      <ul>
+        <li><a href="About.html">About</a></li>
+        <li><a href="CV.html">CV</a></li>
+        <li><a href="Research.html">Research</a></li>
+        <li><a href="Pubs.html">Publications</a></li>
+        <li><a href="Gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  
+  <!-- Main -->
+  <section id="main">
+    <body onload = "startTimer()">
+      <span class="avatar">
+        <img id="img" src="Gallery/winter.jpg" width="325" height="325">
+        <button class="button button" onclick="displayPreviousImage()"><</button>
+        <button class="button button" onclick="displayNextImage()">></button>
+      </span>
+      <h1> <p class = "thicker">Matthew H. Futia</p> </h1>
+      <h2> <p class = "thick">University of Vermont</p> </h2>
+      <img id="img" src="Gallery/headshot.png" width="150" height="150">
+      <h3> <p class="thick"> Aquatic ecology for conservation and restoration</p> </h3>
+    </body>
+  
+  <!--
+  <h2>Extra Stuff!</h2>
+  <form method="post" action="#">
+  <div class="fields">
+  <div class="field">
+  <input type="text" name="name" id="name" placeholder="Name" />
+  </div>
+  <div class="field">
+  <input type="email" name="email" id="email" placeholder="Email" />
+  </div>
+  <div class="field">
+  <select name="department" id="department">
+  <option value="">Department</option>
+  <option value="sales">Sales</option>
+  <option value="tech">Tech Support</option>
+  <option value="null">/dev/null</option>
+  </select>
+  </div>
+  <div class="field">
+  <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+  </div>
+  <div class="field">
+  <input type="checkbox" id="human" name="human" /><label for="human">I'm a human</label>
 								</div>
 								<div class="field">
 									<label>But are you a robot?</label>
@@ -134,7 +145,9 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="copyright">
-							<li>&copy; Matthew H. Futia</li>
+							<li>
+							  <p class="thick">&copy; Matthew H. Futia</p>
+							</li>
 						</ul>
 					</footer>
 
