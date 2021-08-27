@@ -208,7 +208,7 @@
 	}
 
 	p {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 0.5em 0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -750,14 +750,14 @@
 				text-decoration: none;
 				position: relative;
 				display: block;
-				width: 3.75em;
-				height: 3.75em;
+				width: 3.25em;
+				height: 3.25em;
 				border-radius: 100%;
 				border: solid 1px #c8cccf;
-				line-height: 3.75em;
+				line-height: 3.25em;
 				overflow: hidden;
 				text-align: center;
-				text-indent: 3.75em;
+				text-indent: 3.25em;
 				white-space: nowrap;
 			}
 
@@ -914,7 +914,7 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		padding: 4.5em 3em 3em 3em ;
+		padding: 1.5em 3em 1em 3em ;
 		background: transparent;
 		border-radius: 0;
 		cursor: default;
@@ -980,7 +980,7 @@
 		-ms-align-self: -ms-flex-end;
 		align-self: flex-end;
 		width: 100%;
-		padding: 1.5em 0 0 0;
+		padding: 0 0 0 0;
 		color: rgba(255, 255, 255, 0.75);
 		cursor: default;
 		text-align: center;
