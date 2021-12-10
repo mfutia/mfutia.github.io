@@ -1,0 +1,211 @@
+<html>
+  <head>
+    <title>Futia Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="assets/css/gallery.css" />
+		
+		<style>
+		
+		* {
+		  box-sizing: border-box;
+		}
+		
+		body {
+		  margin: 0;
+		  font-family: Arial;
+		}
+		
+/* The grid: Four equal columns that floats next to each other */
+		.column {
+		  float: left;
+		  width: 25%;
+		  padding: 10px;
+		  bottom: 10px;
+		}
+		
+/* Style the images inside the grid */
+		.column img {
+		  opacity: 0.8; 
+		  cursor: pointer; 
+		}
+		
+		.column img:hover {
+		  opacity: 1;
+		}
+		
+/* Clear floats after the columns */
+		.row:after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+		
+/* The expanding image container */
+    .container {
+      vertical-align: center;
+      position: fixed;
+      display: none;
+      margin-left: 10%;
+      width: 60%;
+      top: 10%;
+    }
+		
+/* Expanding image text */
+		#imgtext {
+		  position: absolute;
+		  top: 15px;
+		  left: 15px;
+		  background-color: #eceef4;
+		  color: black;
+		  font-size: 24px;
+		  padding: 0 10 0 10;
+		}
+		
+/* Closable button inside the expanded image */
+		.closebtn {
+		  position: absolute;
+		  top: 10px;
+		  right: 15px;
+		  color: black;
+		  background-color: rgba(0,0,0,0.5);
+		  line-height: 1;
+		  padding: 0 10 0 10;
+		  font-size: 35px;
+		  cursor: pointer;
+		}
+		
+		.closebtn:hover,
+		.closebtn:focus {
+		  color: #bbb;
+		  text-decoration: none;
+		  cursor: pointer;
+		}
+		
+		.doc{
+      background-color: transparent;
+      width: 100%;
+      bottom: 10px;
+     
+
+		
+		</style>
+	</head>
+	
+	<body>
+
+<!-- Header-->
+    <header id="header">
+      <nav class="links">
+        <ul>
+          <li><h4><a href="https://mfutia.github.io/">Home</a></h4></li>
+          <li><h4><a href="About.html">About</a></h4></li>
+          <li><h4><a href="CV.html">CV</a></h4></li>
+          <li><h4><a href="Research.html">Research</a></h4></li>
+          <li><h4><a href="Pubs.html">Publications</a></h4></li>
+          <li><h1><a href="Gallery.html">Gallery</a></h1></li>
+        </ul>
+      </nav>
+    </header>
+
+  
+<!-- Footer -->
+    <footer id="footer">
+      <nav class="copyright">
+        <ul>
+          <li><h6 class="thick">&copy; Matthew H. Futia</h6></li>
+        </ul>
+      </div>
+    </footer>
+    
+<!-- Main -->    
+    <section id="main">
+      <div style="text-align:center">
+        <h1>Field Work Photos</h1>
+      </div>
+
+<!-- The four columns -->
+    <div class="doc">
+      <div class="row">
+        <div class="column">
+          <img src="Gallery/fishsurgery.jpg" alt="Surgical transmitter implant" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/laketrout.jpg" alt="Juvenile lake trout captured with bottom trawling" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/cassieLT.jpg" alt="Adult lake trout captured by angling" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/fallwork.jpg" alt="Fall fieldwork on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/electrofishing2.jpg" alt="Sunset on Lake Ontario while electrofishing" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/LTdiet2.jpg" alt="Lake trout with a large rainbow smelt in its stomach" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/northernpike.jpg" alt="Northern pike captured in a trapnet" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/wintergillnet.jpg" alt="Pulling in a gill net through the ice" style="width:100%" onclick="myFunction(this);">
+        </div>
+      
+        <div class="column">
+          <video width="100%" controls alt="Lake trout release after tagging" onclick="myFunction(this);">
+            <source src="Gallery/lt_release.mov" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column">
+          <img src="Gallery/LTeggs.jpg" alt="Eyed lake trout eggs" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <video width="100%" controls alt="Surgical implantation of acoustic transmitter" onclick="myFunction(this);">
+            <source src="Gallery/fish_surgery.mov" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="column">
+          <img src="Gallery/roundgoby2.jpg" alt="Invasive round goby for feeding experiment" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/winterwork.jpg" alt="Sunrise while walking out on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+<!--
+        <div class="column">
+          <img src="Gallery/.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+      </div>
+-->
+
+      <div class="container">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>
+      </div>
+    </div>
+    
+    </section>
+    
+    <script>
+    function myFunction(imgs) {
+      var expandImg = document.getElementById("expandedImg");
+      var imgText = document.getElementById("imgtext");
+      expandImg.src = imgs.src;
+      imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.style.display = "block";
+    }
+    </script>
+  </body>
+</html>
