@@ -264,7 +264,7 @@
 		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
 		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
-		padding: 4.5em 10em 10em 10em;
+		padding: 4.5em 10em 0em 10em;
 		background: transparent;
 		border-radius: 0;
 		cursor: default;
@@ -272,7 +272,7 @@
 		opacity: 1;
 		text-align: left;
 		width: 100%;
-		bottom: 10em;
+		bottom: 5em;
 	}
 
 		#main a {
@@ -342,7 +342,7 @@
 		color: transparent;
 		cursor: default;
 		text-align: center;
-		position: fixed;
+		position: relative;
 		bottom: 0;
 	}
 
@@ -427,7 +427,6 @@
 			height: inherit;
 			line-height: inherit;
 			margin-left: 1.5em;
-			overflow: hidden;
 			padding-left: 1.5em;
 		}
 
