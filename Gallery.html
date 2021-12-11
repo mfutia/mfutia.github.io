@@ -33,6 +33,10 @@
 		  opacity: 1;
 		}
 		
+		.column video:hover{
+		  opacity: 1;
+		}
+		
 /* Clear floats after the columns */
 		.row:after {
 		  content: "";
@@ -42,24 +46,22 @@
 		
 /* The expanding image container */
     .container {
-      vertical-align: center;
+      top: 10%;
+      left: 30%;
       position: fixed;
       display: none;
-      margin-left: 10%;
-      width: 60%;
-      top: 10%;
+      width: 40%;
     }
 		
 /* Expanding image text */
 		#imgtext {
 		  position: absolute;
-		  top: 15px;
-		  left: 15px;
+		  bottom: -40px;
+		  width: 100%;
 		  background-color: #eceef4;
 		  color: black;
-		  font-size: 24px;
+		  font-size: 20px;
 		  padding: 0 10 0 10;
-		  margin-right: 20px;
 		}
 		
 /* Closable button inside the expanded image */
@@ -71,7 +73,7 @@
 		  background-color: rgba(0,0,0,0.5);
 		  line-height: 1;
 		  padding: 0 10 0 10;
-		  font-size: 35px;
+		  font-size: 32px;
 		  cursor: pointer;
 		}
 		
@@ -109,15 +111,6 @@
     </header>
 
   
-<!-- Footer -->
-    <footer id="footer">
-      <nav class="copyright">
-        <ul>
-          <li><h6 class="thick">&copy; Matthew H. Futia</h6></li>
-        </ul>
-      </div>
-    </footer>
-    
 <!-- Main -->    
     <section id="main">
       <div style="text-align:center">
@@ -125,12 +118,23 @@
       </div>
 
 <!-- The four columns -->
-    <div class="doc">
       <div class="row">
         <div class="column">
           <img src="Gallery/fishsurgery.jpg" alt="Surgical transmitter implant" style="width:100%" onclick="myFunction(this);">
         </div>
+
+        <div class="column">
+          <video width="100%" controls alt="Surgical implantation of acoustic transmitter" onclick="myFunction(this);">
+            <source src="Gallery/fish_surgery.mp4" type="video/mp4">
+          </video>
+        </div>
         
+        <div class="column">
+          <video width="100%" controls alt="Lake trout release after tagging">
+            <source src="Gallery/lt_release.mp4" type="video/mp4">
+          </video>
+        </div>
+
         <div class="column">
           <img src="Gallery/laketrout.jpg" alt="Juvenile lake trout captured with bottom trawling" style="width:100%" onclick="myFunction(this);">
         </div>
@@ -160,19 +164,7 @@
         </div>
       
         <div class="column">
-          <video width="100%" controls alt="Lake trout release after tagging" onclick="myFunction(this);">
-            <source src="Gallery/lt_release.mov" type="video/mp4">
-          </video>
-        </div>
-
-        <div class="column">
           <img src="Gallery/LTeggs.jpg" alt="Eyed lake trout eggs" style="width:100%" onclick="myFunction(this);">
-        </div>
-
-        <div class="column">
-          <video width="100%" controls alt="Surgical implantation of acoustic transmitter" onclick="myFunction(this);">
-            <source src="Gallery/fish_surgery.mov" type="video/mp4">
-          </video>
         </div>
 
         <div class="column">
@@ -195,9 +187,19 @@
         <img id="expandedImg" style="width:100%">
         <div id="imgtext"></div>
       </div>
-    </div>
-    
+
     </section>
+    
+    
+<!-- Footer -->
+    <footer id="footer">
+      <nav class="copyright">
+        <ul>
+          <li><h6 class="thick">&copy; Matthew H. Futia</h6></li>
+        </ul>
+      </div>
+    </footer>    
+    
     
     <script>
     function myFunction(imgs) {
