@@ -46,7 +46,7 @@
 		
 /* The expanding image container */
     .container {
-      top: 10%;
+      top: 15%;
       left: 30%;
       position: fixed;
       display: none;
@@ -116,6 +116,10 @@
       <div style="text-align:center">
         <h1>Field Work Photos</h1>
       </div>
+      
+      <div>
+        <h2>Current research on Lake Champlain</h2>
+      </div>
 
 <!-- The four columns -->
       <div class="row">
@@ -136,15 +140,67 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/laketrout.jpg" alt="Juvenile lake trout captured with bottom trawling" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/juv_laketrout.jpg" alt="Juvenile lake trout captured with bottom trawling" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
           <img src="Gallery/cassieLT.jpg" alt="Adult lake trout captured by angling" style="width:100%" onclick="myFunction(this);">
         </div>
+
+        <div class="column">
+          <img src="Gallery/diving_entry.jpg" alt="Rolling off the back of the R/V Melosira for SCUBA diving" style="width:100%" onclick="myFunction(this);">
+        </div>
         
         <div class="column">
           <img src="Gallery/fallwork.jpg" alt="Fall fieldwork on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/lt_diet.jpg" alt="Lake trout with a large rainbow smelt in its stomach" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/wintergillnet.jpg" alt="Pulling in a gill net through the ice" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/winterwork.jpg" alt="Sunrise at the start of winter field day on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/matt_lt.jpg" alt="Lake trout captured during fall" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/rov_laketrout.jpg" alt="Spawning aggregation of lake trout" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/ice_fishing.jpg" alt="Winter sampling on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/lampreywound.jpg" alt="Lake trout with sea lamprey and fresh lamprey wound" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/channel_cat.jpg" alt="Channel catfish collected while assisting state biologists" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+      <div>
+        <h2>Previous research on Lake Ontario</h2>
+      </div>
+        
+        <div class="column">
+          <img src="Gallery/stripping_eggs_ms.jpg" alt="Stripping eggs from a Chinook salmon for biochemical analyses" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/backpack_shocking_ms.jpg" alt="Backpack electroshocking for salmon and trout in a tributary of Lake Ontario" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/chinook_ms.jpg" alt="Chinook salmon collected for biochemical analyses" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
@@ -152,27 +208,23 @@
         </div>
         
         <div class="column">
-          <img src="Gallery/LTdiet2.jpg" alt="Lake trout with a large rainbow smelt in its stomach" style="width:100%" onclick="myFunction(this);">
-        </div>
-        
-        <div class="column">
           <img src="Gallery/northernpike.jpg" alt="Northern pike captured in a trapnet" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
-          <img src="Gallery/wintergillnet.jpg" alt="Pulling in a gill net through the ice" style="width:100%" onclick="myFunction(this);">
-        </div>
-      
-        <div class="column">
-          <img src="Gallery/LTeggs.jpg" alt="Eyed lake trout eggs" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/eyed_eggs_ms.jpg" alt="Eyed lake trout eggs" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
-          <img src="Gallery/roundgoby2.jpg" alt="Invasive round goby for feeding experiment" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/roundgoby.jpg" alt="Invasive round goby for feeding experiment" style="width:100%" onclick="myFunction(this);">
         </div>
-
+        
         <div class="column">
-          <img src="Gallery/winterwork.jpg" alt="Sunrise while walking out on Lake Champlain" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/salmon_ms.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+        </div>
+        
+        <div class="column">
+          <img src="Gallery/rv_kaho.jpg" alt="Field work with the USGS-LOBS and their R/V Kaho" style="width:100%" onclick="myFunction(this);">
         </div>
 
 <!--
@@ -182,13 +234,14 @@
       </div>
 -->
 
-      <div class="container">
-        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
-        <div id="imgtext"></div>
-      </div>
-
     </section>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
     
     
 <!-- Footer -->
