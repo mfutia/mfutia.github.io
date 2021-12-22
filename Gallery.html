@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
   <head>
     <title>Futia Gallery</title>
@@ -71,7 +73,7 @@
 /* Expanding image text */
 		#imgtext {
 		  position: absolute;
-		  bottom: -40px;
+		  bottom: -30px;
 		  width: 100%;
 		  background-color: #eceef4;
 		  color: black;
@@ -85,11 +87,14 @@
 		  top: 10px;
 		  right: 15px;
 		  color: black;
+		  width: 30px;
+		  height: 30px;
 		  background-color: rgba(0,0,0,0.5);
 		  line-height: 1;
-		  padding: 0 10 0 10;
 		  font-size: 32px;
 		  cursor: pointer;
+		  text-align: center;
+		  padding-left: 3px;
 		}
 		
 		.closebtn:hover,
@@ -142,11 +147,25 @@
 
         <div class="column">
           <video width="100%" controls>
-            <source src="Gallery/fish_surgery.mp4" type="video/mp4">
+            <source src="Gallery/fish_surgery1.mp4" type="video/mp4">
           </video>
-          <div class="hide"><p>Surgical implantation of acoustic transmitter</p></div>
+          <div class="hide"><p>Surgical implantation of acoustic transmitter (Part 1)</p></div>
         </div>
         
+        <div class="column">
+          <video width="100%" controls>
+            <source src="Gallery/fish_surgery2.mp4" type="video/mp4">
+          </video>
+          <div class="hide"><p>Surgical implantation of acoustic transmitter (Part 2)</p></div>
+        </div>
+
+        <div class="column">
+          <video width="100%" controls>
+            <source src="Gallery/fish_surgery3.mp4" type="video/mp4">
+          </video>
+          <div class="hide"><p>Surgical implantation of acoustic transmitter (Part 3)</p></div>
+        </div>
+
         <div class="column">
           <video width="100%" controls>
             <source src="Gallery/lt_release.mp4" type="video/mp4">
@@ -159,11 +178,19 @@
         </div>
         
         <div class="column">
-          <img src="Gallery/cassieLT.jpg" alt="Adult lake trout captured by angling" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/cassieLT.JPG" alt="Adult lake trout captured by angling" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
           <img src="Gallery/diving_entry.jpg" alt="Rolling off the back of the R/V Melosira for SCUBA diving" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/eggbag.png" alt="Burying a mesh egg bag in a lake trout spawning reef" style="width:100%" onclick="myFunction(this);">
+        </div>
+
+        <div class="column">
+          <img src="Gallery/seeding_eggs.jpg" alt="Seeding fertilized lake trout eggs in egg bags" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
@@ -179,7 +206,7 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/wintergillnet.jpg" alt="Pulling in a gill net through the ice" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/wintergillnet.JPG" alt="Pulling in a gill net through the ice" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
@@ -191,7 +218,7 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/rov_laketrout.jpg" alt="Spawning aggregation of lake trout" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/rov_laketrout.JPG" alt="Spawning aggregation of lake trout" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
@@ -211,13 +238,13 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/eggbag.png" alt="Burying a mesh egg bag in a lake trout spawning reef" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/sturgeon.jpg" alt="Lake strugeon collected for acoustic tracking" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
-          <img src="Gallery/sturgeon.jpg" alt="Lake strugeon collected for acoustic tracking" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/trawl_catch.jpg" alt="Sorting catch from a bottom trawl" style="width:100%" onclick="myFunction(this);">
         </div>
-        
+
         <div class="column">
           <img src="Gallery/sunrise.jpg" alt="Fiery sunrise ove Lake Champlain" style="width:100%" onclick="myFunction(this);">
         </div>
@@ -240,7 +267,7 @@
         </div>
         
         <div class="column">
-          <img src="Gallery/chinook_ms.jpg" alt="Chinook salmon collected for biochemical analyses" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/chinook_ms.JPG" alt="Chinook salmon collected for biochemical analyses" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
@@ -251,7 +278,7 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/northernpike.jpg" alt="Northern pike captured in a trap net" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/northernpike.JPG" alt="Northern pike captured in a trap net" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
@@ -259,7 +286,7 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/roundgoby.jpg" alt="Invasive round goby for feeding experiment" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/roundgoby.JPG" alt="Invasive round goby for feeding experiment" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
@@ -271,7 +298,7 @@
         </div>
         
         <div class="column">
-          <img src="Gallery/ontario_lt.jpg" alt="Lake trout collected while assisting USGS biologists" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/ontario_lt.JPG" alt="Lake trout collected while assisting USGS biologists" style="width:100%" onclick="myFunction(this);">
         </div>
         
         <div class="column">
@@ -279,7 +306,7 @@
         </div>
 
         <div class="column">
-          <img src="Gallery/lamprey.jpg" alt="Headshot of a sea lamprey" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/lamprey.JPG" alt="Headshot of a sea lamprey" style="width:100%" onclick="myFunction(this);">
         </div>
 
         <div class="column">
@@ -314,13 +341,7 @@
       <div id="imgtext"></div>
     </div>
 
-    <div class="container">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      <vid id="expandedVid" style="width:100%">
-      <div id="vidtext"></div>
-    </div>
-    
-    
+
 <!-- Footer -->
     <footer id="footer">
       <nav class="copyright">
@@ -330,7 +351,7 @@
       </div>
     </footer>    
     
-    
+<!-- Scripts -->    
     <script>
     function myFunction(imgs) {
       var expandImg = document.getElementById("expandedImg");
