@@ -40,32 +40,17 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     </script>
     
     <style>
-    .button {
-      color: white;
-      font-size: 20px;
-      padding: 0px 7px;
-      text-align: center;
-      transition-duration: 0.3s;
-      border-radius: 50%;
-      border-color: transparent;
-      height: 1.5em;
-      line-height: 10px;
-    }
-    
-    .button:hover{
-      background-color: #707c80;
-      color: black;
-      border: #ffffff;
-      height: 1.5em;
-      line-height: 10px;
-    }
-    
+
     body {
       font-family: Arial;
     }
     
     img{
       height: 50vh;
+    }
+    
+    div.a{
+      height: 5em;
     }
 
    </style>
@@ -75,14 +60,14 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     
     <!-- Header -->
     <header id="header">
-      <h4><a href="https://mfutia.github.io/">Home</a></h4>
       <nav class="links">
         <ul>
-          <li><a href="About.html">About</a></li>
-          <li><a href="CV.html">CV</a></li>
-          <li><a href="Research.html">Research</a></li>
-          <li><a href="Pubs.html">Publications</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
+          <li><h3><a href="https://mfutia.github.io/">Home</a></h3></li>
+          <li><h4><a href="About.html">About</a></li></h4>
+          <li><h4><a href="CV.html">CV</a></li></h4>
+          <li><h4><a href="Research.html">Research</a></li></h4>
+          <li><h4><a href="Pubs.html">Publications</a></li></h4>
+          <li><h4><a href="Gallery.html">Gallery</a></li></h4>
         </ul>
       </nav>
     </header>
@@ -90,25 +75,27 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       
     <!-- Main -->
     <div id="main">
-      <div>
-        <h1 style="text-transform:none; font-weight:bold">Matthew H. Futia</h1>
+      <div style="height:3.5em">
+        <h1>Matthew H. Futia</h1>
       </div>
 
-      <div>
-        <h2 style="font-weight:bold"> Aquatic Ecology for Conservation & Restoration</h2>
+      <div style="height:3em">
+        <h2> Aquatic Ecology for Conservation & Restoration</h2>
       </div>
 
-      <div>
-        <h2 style="font-weight:bold">PhD Candidate - University of Vermont</h2>
+      <div  style="height:2.5em">
+        <h2 >PhD Candidate - University of Vermont</h2>
       </div>
     
       <div>
         <span class="avatar">
           <img id="img" src="Gallery/headshot.jpg">
-          <button class="button button" onclick="displayPreviousImage()"><</button>
-          <button class="button button" onclick="displayNextImage()">></button>
         </span>
-
+      </div>
+      
+      <div>
+        <span class="button" onclick="displayPreviousImage()"><</span>
+        <span class="button" onclick="displayNextImage()">></span>
       </div>
       
     </div>
@@ -117,15 +104,15 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     
     <!-- Footer -->
     <footer id="footer">
-      <div>
+      <div class="a">
         <ul class="icons">
           <li><a href="https://twitter.com/matt_futia" class="icon brands fa-twitter">Twitter</a></li>
           <li><a href="https://github.com/mfutia" class="icon brands fa-github">github</a></li>
-          <li><a href="mailto: mfutia@uvm.edu" class="fa fa-envelope">Email</a></li>
+          <li><a href="mailto: mfutia@uvm.edu" class="fa-envelope">Email</a></li>
         </ul>
       </div>
       
-      <div style="padding-bottom:0.8%">
+      <div>
         <ul class="copyright">
           <li><h6>&copy; Matthew H. Futia</h6></li>
         </ul>
