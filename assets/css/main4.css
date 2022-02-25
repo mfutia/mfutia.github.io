@@ -78,7 +78,7 @@
 
 /* Basic */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 768px) {
 
 		html, body {
 			min-width: 320px;
@@ -164,7 +164,7 @@
 
 		}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 768px) {
 
 			body, input, select, textarea {
 				font-size: 10pt;
@@ -260,7 +260,7 @@
 		color: #ffffff;
 	}
 	
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width:768px) {
 
 		h1 {
 			font-size: 1.65em;
@@ -334,7 +334,7 @@
 					width: calc(25% - 0.28125em);
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 768px) {
 
 			form > .fields {
 				width: calc(100% + 2.25em);
@@ -680,7 +680,7 @@
 				width: 100%;
 			}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 768px) {
 
 			ul.actions:not(.fixed) {
 				-moz-flex-direction: column;
@@ -798,7 +798,7 @@
 					border-color: #414f57;
 				}
 
-		@media screen and (max-width: 480px) {
+		@media screen and (max-width: 768px) {
 
 			ul.icons li a:before {
 				font-size: 1.5rem;
@@ -829,8 +829,8 @@
 		margin-top: 0.5em;
 		background-color: transparent;
 		border-radius: 100%;
-		border: solid 1px #c8cccf;
-		color: #414f57;
+		border: solid 1px;
+		color: #ffffff;
 		cursor: pointer;
 		text-align: center;
 		text-decoration: none;
@@ -844,7 +844,8 @@
 		button:hover,
 		.button:hover {
 			border-color: #ffffff;
-			color: #252525 !important;
+			color: #000000;
+			background-color: rgba(0,0,0,0.4);
 		}
 
 		input[type="submit"].icon,
@@ -931,6 +932,8 @@
 			position: relative;
 			display: block;
 			margin-top: 0.5em;
+			margin-left: 10%;
+			max-width: 80%;
 		}
 
 			#main .avatar img {
@@ -940,6 +943,20 @@
 				box-shadow: 0 0 0 0 #ebfafa;
 				
 			}
+
+		@media screen and (max-width: 768px) {
+
+			#main {
+				padding: 4em 2em 2.5em 2em ;
+				width: 100%;
+			}
+
+				#main .avatar:before {
+					left: -2em;
+					width: calc(100% + 4em);
+				}
+
+		}
 
 
 /* Footer */
@@ -1144,15 +1161,8 @@
 				padding: 0 0.5em 0 0;
 			}
 
-		@media screen and (max-width: 980px) {
 
-			#header .links {
-				display: none;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 768px) {
 
 			#header {
 				height: 2.75em;
@@ -1163,9 +1173,6 @@
 					padding: 0 0 0 1em;
 				}
 
-				#header .main .search {
-					display: none;
-				}
 
 		}
 
