@@ -225,7 +225,7 @@
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.25em;
 		align: left;
 		width: 100%;
 	}
@@ -263,7 +263,7 @@
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 1.2em;
 			text-align: center;
 			vertical-align: center;
 			text-transform: uppercase;
@@ -1001,14 +1001,11 @@
 		@media screen and (max-width: 768px) {
 
 			#main {
-				padding: 4em 1em 2.5em 1em ;
+				margin: 4em 1em 2.5em 1em;
+				padding: 4em 1em 2.5em 1em;
 				width: 100%;
 			}
 
-				#main .avatar:before {
-					left: -2em;
-					width: calc(100% + 4em);
-				}
 
 		}
 

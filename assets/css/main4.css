@@ -245,7 +245,7 @@
 	}
 
 	h4 {
-		font-size: 1em;
+		font-size: 1.25em;
 		align: left;
 		width: 100%;
 	}
@@ -281,7 +281,7 @@
 		}
 
 		h3 {
-			font-size: 1em;
+			font-size: 1.2em;
 			text-align: center;
 			vertical-align: center;
 			text-transform: uppercase;
@@ -1015,7 +1015,7 @@
 					position: relative;
 					display: block;
 					margin-top: 0.5em;
-					margin-left: 25%;
+					margin: auto;
 					max-width: 50%;
 				}
 
