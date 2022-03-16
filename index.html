@@ -34,7 +34,6 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     
     if ('addEventListener' in window) {
       window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-preload\b/, ''); });
-      document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
 	  }
 
     </script>
@@ -71,37 +70,32 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         </ul>
       </nav>
     </header>
-      
-      
+
     <!-- Main -->
     <div id="main">
-      <div style="height:3.5em">
+      <div>
         <h1>Matthew H. Futia</h1>
       </div>
 
-      <div style="height:3em">
+      <div>
         <h2> Aquatic Ecology for Conservation & Restoration</h2>
       </div>
 
-      <div  style="height:2.5em">
+      <div>
         <h2 >PhD Candidate - University of Vermont</h2>
       </div>
     
-      <div>
-        <span class="avatar">
-          <img id="img" src="Gallery/headshot.jpg">
-        </span>
+      <div class="avatar">
+        <img id="img" src="Gallery/headshot.jpg">
       </div>
       
-      <div>
+      <div style="position:relative; bottom:-50%">
         <span class="button" onclick="displayPreviousImage()"><</span>
         <span class="button" onclick="displayNextImage()">></span>
       </div>
       
     </div>
-  
-  </body>
-    
+
     <!-- Footer -->
     <footer id="footer">
       <div class="a">
@@ -118,6 +112,9 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         </ul>
       </div>
       
-    </footer>
+    </footer>      
+      
+  </body>
+    
 
 </html>

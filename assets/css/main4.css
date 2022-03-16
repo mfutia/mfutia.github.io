@@ -114,6 +114,7 @@
 		width: 100%;
 		background-image: url("../../Gallery/champlain.jpg");
 		background-size: 100% 100%;	
+		overflow: auto;
 	}
 
 		body:after {
@@ -207,7 +208,6 @@
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #252525;
-		line-height: 1.5;
 		margin: 0 0 0.75em 0;
 	}
 
@@ -224,6 +224,8 @@
 		font-weight: bolder;
 		font-family: Arial;
 		width: 100%;
+		line-height: 1;
+		height: 1;
 	}
 
 	h2 {
@@ -232,6 +234,8 @@
 		text-transform: none;
 		width: 100%;
 		color: #424c54;
+		line-height: 1;
+		height: 1;
 	}
 
 	h3 {
@@ -944,42 +948,33 @@
 /* Main */
 
 	#main {
-		-moz-transform-origin: 50% 50%;
-		-webkit-transform-origin: 50% 50%;
-		-ms-transform-origin: 50% 50%;
-		transform-origin: 50% 50%;
-		-moz-transform: rotateX(0deg);
-		-webkit-transform: rotateX(0deg);
-		-ms-transform: rotateX(0deg);
-		transform: rotateX(0deg);
-		-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-		-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-		-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 		transition: opacity 1s ease, transform 1s ease;
 		background: transparent;
-		border-radius: 0;
 		cursor: default;
 		max-width: 100%;
 		opacity: 0.95;
-		position: fixed;
+		position: absolute;
+		overflow: auto;
 		text-align: center;
 		width: 100%;
-		padding-top: 5em;
-		margin: auto;
+		margin-top: 4em;
+		padding-top: 0.5em;
+		top: 1%;
+		height: 100%;
 	}
 
 		#main .avatar {
-			position: relative;
+			position: absolute;
+			align: center;
+			width: 100%;
+			margin: auto;
 			display: block;
-			margin-top: 0.5em;
-			margin-left: 10%;
-			max-width: 80%;
 		}
 
 			#main .avatar img {
 				display: block;
 				margin: auto;
-				border-radius: 100%;
+				border-radius: 50%;
 				box-shadow: 0 0 0 0 #ebfafa;
 				
 			}
@@ -987,36 +982,25 @@
 		@media screen and (max-width: 768px) {
 
 			#main {
-				-moz-transform-origin: 50% 50%;
-				-webkit-transform-origin: 50% 50%;
-				-ms-transform-origin: 50% 50%;
-				transform-origin: 50% 50%;
-				-moz-transform: rotateX(0deg);
-				-webkit-transform: rotateX(0deg);
-				-ms-transform: rotateX(0deg);
-				transform: rotateX(0deg);
-				-moz-transition: opacity 1s ease, -moz-transform 1s ease;
-				-webkit-transition: opacity 1s ease, -webkit-transform 1s ease;
-				-ms-transition: opacity 1s ease, -ms-transform 1s ease;
 				transition: opacity 1s ease, transform 1s ease;
 				background: transparent;
-				border-radius: 0;
 				cursor: default;
 				max-width: 100%;
 				opacity: 0.95;
-				position: fixed;
+				position: relative;
+				overflow: auto;
 				text-align: center;
 				width: 100%;
 				padding: 4em 2em 2.5em 2em ;
-				margin: auto;
+				margin-top: 2.75;
 			}
 
 				#main .avatar {
 					position: relative;
-					display: block;
-					margin-top: 0.5em;
+					align: center;
+					width: 100%;
 					margin: auto;
-					max-width: 50%;
+					display: block;
 				}
 
 					#main .avatar img {
@@ -1041,7 +1025,7 @@
 		cursor: default;
 		text-align: center;
 		bottom: 0;
-		position: fixed;
+		position: absolute;
 		padding-bottom: 0.25em;
 	}
 
@@ -1054,6 +1038,8 @@
 
 			#footer .copyright li {
 				display: inline-block;
+				margin: 0 0 0 0.45em;
+				padding: 0 0 0 0.85em;
 				border-left: solid 1px rgba(255, 255, 255, 0.5);
 				line-height: 1;
 				font-weight: 350;
@@ -1070,9 +1056,10 @@
 
 	#header {
 		justify-content: space-between;
-		background-color: transparent;
+		background-color: #eceef4;
 		border-bottom: solid 1px rgba(160, 160, 160, 0.3);
 		width: 100%;
+		top: 0;
 		height: 4em;
 		line-height: 4em;
 		z-index: 10000;
