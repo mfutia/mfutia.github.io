@@ -114,7 +114,6 @@
 		width: 100%;
 		background-image: url("../../Gallery/champlain.jpg");
 		background-size: 100% 100%;	
-		overflow: auto;
 	}
 
 		body:after {
@@ -953,8 +952,7 @@
 		cursor: default;
 		max-width: 100%;
 		opacity: 0.95;
-		position: absolute;
-		overflow: auto;
+		position: fixed;
 		text-align: center;
 		width: 100%;
 		margin-top: 4em;
@@ -965,7 +963,6 @@
 
 		#main .avatar {
 			position: absolute;
-			align: center;
 			width: 100%;
 			margin: auto;
 			display: block;
@@ -973,6 +970,7 @@
 
 			#main .avatar img {
 				display: block;
+				max-width: 80%;
 				margin: auto;
 				border-radius: 50%;
 				box-shadow: 0 0 0 0 #ebfafa;
@@ -987,17 +985,15 @@
 				cursor: default;
 				max-width: 100%;
 				opacity: 0.95;
-				position: relative;
-				overflow: auto;
+				position: fixed;
 				text-align: center;
 				width: 100%;
-				padding: 4em 2em 2.5em 2em ;
-				margin-top: 2.75;
+				margin: auto;
+				top: 5%;
 			}
 
 				#main .avatar {
-					position: relative;
-					align: center;
+					position: fixed;
 					width: 100%;
 					margin: auto;
 					display: block;
@@ -1006,7 +1002,8 @@
 					#main .avatar img {
 					display: block;
 					margin: auto;
-					border-radius: 100%;
+					border-radius: 50%;
+					max-width: 100%;
 					box-shadow: 0 0 0 0 #ebfafa;
 					}
 
@@ -1025,7 +1022,7 @@
 		cursor: default;
 		text-align: center;
 		bottom: 0;
-		position: absolute;
+		position: fixed;
 		padding-bottom: 0.25em;
 	}
 
@@ -1222,8 +1219,8 @@
 		@media screen and (max-width: 768px) {
 
 			#header {
-				height: 2.75em;
-				line-height: 2.75em;
+				max-height: 5%;
+				line-height: 5%;
 			}
 			
 				#header .links {
