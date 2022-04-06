@@ -1002,8 +1002,9 @@
 					#main .avatar img {
 					display: block;
 					margin: auto;
-					border-radius: 50%;
+					border-radius: 100%;
 					max-width: 80%;
+					max-height: 80%;
 					box-shadow: 0 0 0 0 #ebfafa;
 					}
 
