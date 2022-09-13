@@ -975,8 +975,7 @@
 				display: block;
 				margin: auto;
 				border-radius: 50%;
-				box-shadow: 0 0 0 0 #ebfafa;
-	
+				border: 1vh solid #546666	
 			}
 			
 		@media screen and (min-height: 800px) {
