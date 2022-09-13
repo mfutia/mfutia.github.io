@@ -978,6 +978,25 @@
 				box-shadow: 0 0 0 0 #ebfafa;
 	
 			}
+			
+		@media screen and (min-height: 800px) {
+			
+			#main h1 {
+				font-size: 5vh;
+				margin: 0.2em 0;
+			}
+			#main h2 {
+				font-size: 3vh;
+				margin: 0.5em 0;				
+				
+			}
+
+			#main .avatar {
+				top:150px;
+				position: fixed;
+			}
+
+		}
 
 		@media screen and (max-width: 768px) {
 
