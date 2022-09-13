@@ -354,7 +354,7 @@
 
 <!--
         <div class="column">
-          <img src="Gallery/thumbs/_thumb.jpg" alt="" style="width:100%" onclick="myFunction(this);">
+          <img src="Gallery/thumbs/XXX_thumb.jpg" alt="XXX" style="width:100%" onclick="myFunction(this);" data-fullsize="Gallery/XXX.jpg">
         </div>
 -->
 
@@ -389,6 +389,7 @@
         expandImg.src = imgs.src;
       }
       imgText.innerHTML = imgs.alt;
+      expandImg.parentElement.parentElement.style.display = "block";
       expandImg.parentElement.style.display = "inline-block";
     }
     </script>
