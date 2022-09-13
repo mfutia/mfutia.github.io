@@ -74,7 +74,6 @@
 /* The expanding image container */
     .container {
       top: 15%;
-      left: 15%;
       position: fixed;
       display: none;
       width: 100%;
@@ -363,7 +362,7 @@
     <div class="container">
       <div class="subcontainer">
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-        <img id="expandedImg" style="width:100%">
+        <img id="expandedImg" style="width:100%; max-height:80vh;">
         <div id="imgtext"></div>        
       </div>
     </div>
