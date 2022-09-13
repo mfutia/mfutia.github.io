@@ -77,13 +77,21 @@
       left: 15%;
       position: fixed;
       display: none;
-      width: 70%;
+      width: 100%;
+      text-align: center;
+    }
+		
+/* Sub-container for full images*/
+    .subcontainer {
+      position: relative;
+      display: none;
+      max-width: 85vw;
     }
 		
 /* Expanding image text */
 		#imgtext {
 		  position: absolute;
-		  top: 95%;
+		  bottom: 0;
 		  width: 100%;
 		  background-color: #eceef4;
 		  color: black;
@@ -353,9 +361,11 @@
     </section>
 
     <div class="container">
-      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-      <img id="expandedImg" style="width:100%">
-      <div id="imgtext"></div>
+      <div class="subcontainer">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtext"></div>        
+      </div>
     </div>
 
 
@@ -379,7 +389,7 @@
         expandImg.src = imgs.src;
       }
       imgText.innerHTML = imgs.alt;
-      expandImg.parentElement.style.display = "block";
+      expandImg.parentElement.style.display = "inline-block";
     }
     </script>
     
